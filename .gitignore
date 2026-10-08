@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+price_models.pkl
+used_resales_clean.csv
+.DS_Store

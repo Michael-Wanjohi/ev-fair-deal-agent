@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: used-ev-fair-deal-agent
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt && python make_demo_data.py && python train_models.py
+    startCommand: streamlit run app.py --server.port $PORT --server.address 0.0.0.0 --server.headless true
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: ANTHROPIC_MODEL
+        value: claude-sonnet-4-5
