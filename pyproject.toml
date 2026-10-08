@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "ev-fair-deal-agent"
+version = "0.1.0"
+description = "Used EV Fair Deal Agent"
+authors = []
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.14"
+pandas = "*"
+numpy = "*"
+scikit-learn = "*"
+joblib = "*"
+streamlit = "*"
+anthropic = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
